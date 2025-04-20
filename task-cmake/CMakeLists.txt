@@ -10,5 +10,5 @@ add_subdirectory(B)
 
 add_subdirectory(C)
 
-add_dependencies(C_main generate_index)
+add_dependencies(C generate_index)
 add_dependencies(CTest generate_index)
