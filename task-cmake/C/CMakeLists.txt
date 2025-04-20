@@ -1,6 +1,7 @@
 add_executable(C main.cpp)
 target_include_directories(C PRIVATE ${CMAKE_SOURCE_DIR}/A ${CMAKE_SOURCE_DIR}/B)
 target_link_libraries(C PRIVATE B)
+include_directories("${PROJECT_SOURCE_DIR}")
 
 find_package(GTest REQUIRED)
 add_executable(CTest main_test.cpp tests.cpp)
