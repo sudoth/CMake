@@ -4,4 +4,4 @@ add_custom_command(
     WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
-add_custom_target(generate_index DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/index.h)
+add_custom_target(generate_index ALL DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/index.h)
